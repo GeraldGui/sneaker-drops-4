@@ -1,4 +1,4 @@
-package com.pluralsight.sneakerdrops;
+package com.pluralsight.sneakerdrops.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,6 +22,14 @@ public class Sneaker {
         this.model = model;
         this.price = price;
         this.releaseYear = releaseYear;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getModel() {
